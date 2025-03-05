@@ -1,13 +1,13 @@
 import express from "express";
-import { verifyToken, authorizeRoles } from "../middlewares/auth.middleware";
+import { verifyToken, authorizeRoles } from "../../middlewares/auth.middleware";
 import {
   createRental,
   getRentals,
   getRentalById,
   updateRental,
   deleteRental,
-} from "../controllers/rental.controller";
-import { UserRole } from "../types/user.types";
+} from "./rental.controller";
+import { UserRole } from "../user/user.types";
 
 const router = express.Router();
 
